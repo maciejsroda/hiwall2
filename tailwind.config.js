@@ -46,6 +46,12 @@ export default {
   			border: 'hsl(var(--border))',
   			input: 'hsl(var(--input))',
   			ring: 'hsl(var(--ring))',
+  			ivory: 'hsl(var(--ivory))',
+  			surface: 'hsl(var(--surface))',
+  			charcoal: 'hsl(var(--charcoal))',
+  			graphite: 'hsl(var(--graphite))',
+  			oak: 'hsl(var(--oak))',
+  			sand: 'hsl(var(--sand))',
   			chart: {
   				'1': 'hsl(var(--chart-1))',
   				'2': 'hsl(var(--chart-2))',

@@ -12,11 +12,21 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Base44 App" },
-      { name: "description", content: "A full-stack Base44 app built with TanStack Start." },
+      { title: "HiWall – Kuchnie i Meble na Wymiar Wrocław" },
+      {
+        name: "description",
+        content:
+          "Kuchnie, szafy i meble na wymiar we Wrocławiu. Poznaj możliwości indywidualnej zabudowy i skontaktuj się z HiWall, aby porozmawiać o swoim projekcie.",
+      },
+      { name: "theme-color", content: "#F7F5F0" },
     ],
-    // No icon link: the platform adds the app's logo when serving.
     links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap",
+      },
       { rel: "stylesheet", href: appCss },
     ],
   }),
@@ -38,7 +48,7 @@ function RootComponent() {
 // The document. There is no index.html: the server renders <html> from here.
 function RootDocument({ children }) {
   return (
-    <html lang="en">
+    <html lang="pl">
       <head>
         <HeadContent />
       </head>
